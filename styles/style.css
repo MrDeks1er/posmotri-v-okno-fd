@@ -83,7 +83,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px; 
+  gap: 26px;
   height: 534px;
   min-width: 399px;
 }
@@ -275,7 +275,7 @@ ol {
   align-self: flex-end;
 }
 
-.search-form__submit-button:hover{
+.search-form__submit-button:hover {
   text-decoration: underline;
 }
 
@@ -293,7 +293,7 @@ ol {
   min-height: 34px;
 }
 
-.more-button:hover{
+.more-button:hover {
   text-decoration: underline;
 }
 
