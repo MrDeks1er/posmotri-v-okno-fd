@@ -69,6 +69,7 @@ ol {
   gap: 40px;
   align-items: flex-start;
   justify-content: space-between;
+  padding-top: 16px;
 }
 
 .search-form__fieldset {
@@ -84,8 +85,8 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  height: 534px;
   min-width: 399px;
+  max-height: 534px;
 }
 
 .content__list-container {
@@ -159,10 +160,6 @@ ol {
   text-decoration: none;
 }
 
-.content__card-link:active {
-  background-color: #545050;
-}
-
 .content__card-link:hover {
   text-decoration: underline;
 }
@@ -175,7 +172,7 @@ ol {
   outline: 1px solid #fff;
 }
 
-.content__card-link_current {
+.content__card-link_current, .content__card-link:active {
   background-color: #545050;
 }
 
@@ -243,6 +240,7 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   padding: 1px;
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -267,43 +265,29 @@ ol {
   font-weight: 700;
   text-align: center;
   cursor: pointer;
+  min-height: 34px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button::focus-visible {
+  outline: 1px solid #fff;
+  background-color: #fff;
 }
 
 .search-form__submit-button {
   width: 194px;
-  min-height: 34px;
   align-self: flex-end;
-}
-
-.search-form__submit-button:hover {
-  text-decoration: underline;
-}
-
-.search-form__submit-button:active {
-  background-color: #545050;
-}
-
-.search-form__submit-button::focus-visible {
-  outline: 1px solid #fff;
-  background-color: #fff;
 }
 
 .more-button {
   width: 100%;
-  min-height: 34px;
-}
-
-.more-button:hover {
-  text-decoration: underline;
-}
-
-.more-button:active {
-  background-color: #545050;
-}
-
-.more-button::focus-visible {
-  outline: 1px solid #fff;
-  background-color: #fff;
 }
 
 /* Кастомный скроллбар */
